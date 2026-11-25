@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8">
+<html lang="es">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#05070a">
 <title>Contador Skibidi para Navidad</title>
@@ -17,7 +19,9 @@ if ('serviceWorker' in navigator) {
 :root{--bg:#05070a}
 html,body{height:100%;margin:0;background:var(--bg);overflow:hidden}
 canvas{display:block;width:100%;height:100%;cursor:pointer}
-</style></head><body>
+</style>
+</head>
+<body>
 <canvas id="c"></canvas>
 <script>
 const cv=document.getElementById('c'),ctx=cv.getContext('2d');
@@ -165,4 +169,6 @@ function frame(now){
 }
 cv.addEventListener('pointerdown',()=>{t0=performance.now()});
 requestAnimationFrame(frame);
-</script></body></html>
+</script>
+</body>
+</html>
